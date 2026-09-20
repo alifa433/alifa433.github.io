@@ -10,9 +10,9 @@
 locale                   : "en-US"
 site_theme               : "default" # The available themes options are "default", "air", "sunrise", "mint", "dirt" and "contrast"
 title                    : "Ali Farhani"
-title_separator          : "-"
+title_separator          : "|"
 name                     : &name "Ali Farhani"
-description              : &description "Blockchain researcher and product manager"
+description              : &description "Ali Farhani is a Product Manager working across FinTech, Web3, blockchain, cryptocurrency products, and digital finance research."
 url                      : "https://alifa433.github.io"
                                                            
 baseurl                  : ""
@@ -26,7 +26,7 @@ author:
   avatar           : "profile.png"
   name             : "Ali Farhani"
   pronouns         : # example: "she/her"  
-  bio              : "Short biography for the left-hand sidebar"
+  bio              : "Product Manager | FinTech | Web3 & Blockchain"
   location         : "Esfahan-Iran"
   employer         : "Iranicard"
   uri              : # URL
@@ -35,12 +35,12 @@ author:
   # Academic websites
   academia         : # URL
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=3n6U0jYAAAAJ&hl=fa"
+  googlescholar    : "https://scholar.google.com/citations?user=3n6U0jYAAAAJ"
   inspire-hep      : # URL
   impactstory      : # URL
   orcid            : "https://orcid.org/0009-0001-1987-8337"
   semantic         : # URL
-  ssrn             : # URL
+  ssrn             : "https://papers.ssrn.com/author=7547454"
   pubmed           : # URL
   researchgate     : # URL
   scopus           : # URL
@@ -66,7 +66,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : "https://www.linkedin.com/in/alifarhani/"
   mastodon         : # URL
   medium           : "https://medium.com/@alifarhani7727315"
   pinterest        : # Username
@@ -143,14 +143,20 @@ facebook:
   username               :
   app_id                 :
   publisher              :
-og_image                 :  # Social media default site image
-og_description           :  # Social media default site image description
+og_image                 : "profile.png"
+og_description           : *description
 # For specifying social profiles
 # - https://developers.google.com/structured-data/customize/social-profiles
 social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
+  type                   : Person
+  name                   : "Ali Farhani"
+  links:
+    - "https://www.linkedin.com/in/alifarhani/"
+    - "https://scholar.google.com/citations?user=3n6U0jYAAAAJ"
+    - "https://github.com/alifa433"
+    - "https://orcid.org/0009-0001-1987-8337"
+    - "https://papers.ssrn.com/author=7547454"
+    - "https://medium.com/@alifarhani7727315"
 
 
 # Analytics
