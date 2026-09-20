@@ -10,6 +10,9 @@
 
 <script>
   document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+  // Neon is the portfolio's default presentation; the toggle still lets visitors switch to light mode.
+  if (!localStorage.getItem('theme')) localStorage.setItem('theme', 'dark');
+  document.documentElement.setAttribute('data-theme', localStorage.getItem('theme'));
 </script>
 
 <!-- For all browsers -->
