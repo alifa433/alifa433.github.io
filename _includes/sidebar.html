@@ -28,9 +28,10 @@
       <div class="credentials__grid">
         {% for credential in site.data.certifications %}
           <div class="credential-card">
-            {% if credential.url %}<a href="{{ credential.url }}" target="_blank" rel="noopener noreferrer">{% endif %}
+            {% assign credential_link = credential.url | default: credential.profile_url %}
+            {% if credential_link %}<a href="{{ credential_link }}" target="_blank" rel="noopener noreferrer">{% endif %}
               <img src="{{ base_path }}/images/{{ credential.image }}" alt="{{ credential.alt }}" loading="lazy" width="110" height="110">
-            {% if credential.url %}</a>{% endif %}
+            {% if credential_link %}</a>{% endif %}
           </div>
         {% endfor %}
       </div>

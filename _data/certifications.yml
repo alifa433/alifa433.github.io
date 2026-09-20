@@ -3,6 +3,7 @@
   issuer: "Google / Coursera"
   image: "certificates/google-project-management-certificate.jpg"
   alt: "Google Project Management Certificate"
+  profile_url: "https://www.credly.com/users/ali-farhani.d0962995"
 
 - name: "Blockchain Fundamentals Certification"
   category: "Blockchain certification"

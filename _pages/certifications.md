@@ -12,9 +12,10 @@ The following certifications are presented from the original credential images s
   {% for credential in site.data.certifications %}
     <article class="credential-card credential-card--page">
       <figure>
-        {% if credential.url %}<a href="{{ credential.url }}" target="_blank" rel="noopener noreferrer">{% endif %}
+        {% assign credential_link = credential.url | default: credential.profile_url %}
+        {% if credential_link %}<a href="{{ credential_link }}" target="_blank" rel="noopener noreferrer">{% endif %}
           <img src="{{ '/images/' | append: credential.image | relative_url }}" alt="{{ credential.alt }}" loading="lazy" width="400" height="400">
-        {% if credential.url %}</a>{% endif %}
+        {% if credential_link %}</a>{% endif %}
         <figcaption>
           <h2>{{ credential.name }}</h2>
           <p>{{ credential.category }}{% if credential.issuer %} · {{ credential.issuer }}{% endif %}</p>
