@@ -1,0 +1,13 @@
+- name: "Google Project Management Certificate"
+  category: "Professional certificate"
+  issuer: "Google / Coursera"
+  image: "certificates/google-project-management-certificate.jpg"
+  alt: "Google Project Management Certificate"
+  profile_url: "https://www.credly.com/users/ali-farhani.d0962995"
+
+- name: "Blockchain Fundamentals Certification"
+  category: "Blockchain certification"
+  issuer: "Credly"
+  image: "certificates/blockchain-fundamentals-certification.jpg"
+  alt: "Blockchain Fundamentals Certification"
+  url: "https://www.credly.com/badges/0c73404f-9434-49dc-9d2c-feaf4cfbfae1"

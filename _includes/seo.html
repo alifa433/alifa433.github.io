@@ -89,7 +89,19 @@
       "jobTitle": "Product Manager",
       "description": {{ site.description | jsonify }},
       "image": {{ site.url | append: site.baseurl | append: "/images/" | append: site.author.avatar | jsonify }},
-      "sameAs": {{ site.social.links | jsonify }}
+      "sameAs": {{ site.social.links | jsonify }},
+      "hasCredential": [
+        {% for credential in site.data.certifications %}
+        {
+          "@type": "EducationalOccupationalCredential",
+          "name": {{ credential.name | jsonify }},
+          "credentialCategory": {{ credential.category | jsonify }},
+          "image": {{ site.url | append: site.baseurl | append: "/images/" | append: credential.image | jsonify }}{% if credential.issuer %},
+          "recognizedBy": {"@type": "Organization", "name": {{ credential.issuer | jsonify }}}{% endif %}{% if credential.url %},
+          "sameAs": {{ credential.url | jsonify }}{% endif %}
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
     },
     {
       "@type": "WebSite",
