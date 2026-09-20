@@ -156,7 +156,94 @@ html[data-theme="dark"] .credentials__grid .credential-card {
   transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
 
   &:hover { transform: translateY(-3px); border-color: rgba(99, 243, 255, 0.6); box-shadow: 0 0 22px rgba(99, 243, 255, 0.12); }
-  img { border-radius: 8px; }
+  .credential-card__image-frame {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.94);
+  }
+
+  img { width: 100%; height: 100%; border-radius: 8px; object-fit: contain; }
+}
+
+html[data-theme="dark"] .credential-card__image-link {
+  display: block;
+  border-radius: 9px;
+  text-decoration: none !important;
+  line-height: 0;
+}
+
+html[data-theme="dark"] .credentials-page {
+  align-items: stretch;
+
+  .credential-card--page { height: 100%; }
+
+  .credential-card__figure {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    margin: 0;
+  }
+
+  .credential-card__image-frame {
+    display: grid;
+    place-items: center;
+    width: 100%;
+    aspect-ratio: 1;
+    overflow: hidden;
+    border: 1px solid $line;
+    border-radius: 14px;
+    background: rgba(255, 255, 255, 0.96);
+  }
+
+  .credential-card__image-frame img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: contain;
+    border-radius: 13px;
+  }
+
+  figcaption {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem 0.2rem 0.2rem;
+  }
+
+  figcaption h2 {
+    width: 100%;
+    min-height: 2.5em;
+    margin: 0 0 0.45rem;
+    padding: 0;
+    border: 0;
+    color: #fff;
+    font-size: 1.15rem;
+  }
+
+  figcaption p { min-height: 3em; margin-bottom: 0.8rem; color: $muted; }
+
+  .credential-card__link {
+    display: inline-flex;
+    gap: 0.35rem;
+    align-items: center;
+    margin-top: auto;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid rgba(99, 243, 255, 0.35);
+    border-radius: 999px;
+    background: rgba(99, 243, 255, 0.08);
+    color: $neon-cyan;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    &:hover { background: rgba(99, 243, 255, 0.16); }
+  }
 }
 
 html[data-theme="dark"] .btn {

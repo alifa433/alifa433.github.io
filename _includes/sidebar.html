@@ -25,16 +25,18 @@
   {% if site.data.certifications %}
     <section class="credentials" aria-labelledby="credentials-title">
       <h3 id="credentials-title">Credentials</h3>
-      <div class="credentials__grid">
-        {% for credential in site.data.certifications %}
-          <div class="credential-card">
-            {% assign credential_link = credential.url | default: credential.profile_url %}
-            {% if credential_link %}<a href="{{ credential_link }}" target="_blank" rel="noopener noreferrer">{% endif %}
-              <img src="{{ base_path }}/images/{{ credential.image }}" alt="{{ credential.alt }}" loading="lazy" width="110" height="110">
+        <div class="credentials__grid">
+          {% for credential in site.data.certifications %}
+          {% assign credential_link = credential.url | default: credential.profile_url %}
+          <article class="credential-card">
+            {% if credential_link %}<a class="credential-card__image-link" href="{{ credential_link }}" target="_blank" rel="noopener noreferrer">{% endif %}
+              <span class="credential-card__image-frame">
+                <img src="{{ base_path }}/images/{{ credential.image }}" alt="{{ credential.alt }}" loading="lazy" width="110" height="110">
+              </span>
             {% if credential_link %}</a>{% endif %}
-          </div>
-        {% endfor %}
-      </div>
+          </article>
+          {% endfor %}
+        </div>
       <a class="credentials__link" href="{{ base_path }}/certifications/">View certifications</a>
     </section>
   {% endif %}
