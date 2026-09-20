@@ -1,13 +1,11 @@
 ---
 permalink: /
-title: "Ali Farhani | Product Management & Blockchain Specialist"
+title: "Ali Farhani | Product Manager | FinTech, Web3 & Blockchain"
+description: "Ali Farhani is a Product Manager specializing in FinTech, cryptocurrency products, Web3, blockchain, and digital finance research."
 author_profile: true
-redirect_from: 
-  - /about/
-  - /about.html
 ---
 
-I am **Ali Farhani**, a Product Management and Blockchain specialist with a background in **Industrial Engineering** and a strong focus on **Decentralized Finance (DeFi)**, tokenization, and blockchain-based systems.
+I am **Ali Farhani**, a **Product Manager | FinTech | Web3 & Blockchain** professional with a background in **Industrial Engineering** and a focus on decentralized finance, tokenization, and blockchain-based systems.
 
 I currently work as a **Product Owner at IraniCard**, where I have played a key role in the development and growth of cryptocurrency and blockchain-related products, particularly in the OTC exchange landscape. My professional experience bridges technical blockchain concepts with practical product design, delivery, and governance.
 
@@ -15,7 +13,7 @@ In parallel with my industry work, I am an active contributor to the blockchain 
 
 My research interests lie at the intersection of **DeFi institutionalization**, **digital asset tokenization**, **Decentralized Science (DeSci)**, and **blockchain-enabled transparency systems**. I have authored and co-authored academic and preprint publications on topics such as regulatory trends in DeFi and the use of **Digital Product Passports (DPPs)** and blockchain technologies for sustainable lithium battery and electric vehicle supply chains.
 
-This website serves as a centralized hub for my **publications, research activities, professional experience, and selected projects**. It also provides access to my academic profiles, including Google Scholar, SSRN, and other professional platforms.
+This website is a central hub for my **professional experience, research, publications, and selected projects**. Explore my [experience](/experience/), [research](/research/), [publications](/publications/), [projects](/projects/), and [contact/profile links](/contact/).
 
 ---
 
@@ -46,10 +44,11 @@ My academic background and professional training span **blockchain technology, f
 
 ### Contact & Profiles
 
-- **Google Scholar:** https://scholar.google.com/citations?user=3n6U0jYAAAAJ  
-- **SSRN:** https://papers.ssrn.com/author=7547454  
-- **LinkedIn:** https://www.linkedin.com/in/alifarhani  
-- **Medium:** https://medium.com/@alifarhani7727315  
+- [Google Scholar](https://scholar.google.com/citations?user=3n6U0jYAAAAJ)
+- [SSRN](https://papers.ssrn.com/author=7547454)
+- [LinkedIn](https://www.linkedin.com/in/alifarhani/)
+- [GitHub](https://github.com/alifa433)
+- [ORCID](https://orcid.org/0009-0001-1987-8337)
+- [Medium](https://medium.com/@alifarhani7727315)
 
 For professional inquiries, collaboration opportunities, or academic discussion, feel free to reach out via email.
-
